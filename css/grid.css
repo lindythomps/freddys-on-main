@@ -1,0 +1,320 @@
+.peach {background-color: #ebbd9f;} 
+.lt-pink {background-color: #efcbb3;}
+.md-blue {background-color: #6c91b4;} 
+.dk-brown  {background-color: #431f07;} 
+.orange {background-color: #ab5821;}
+.lt-blue {background-color: #afb8c5;}
+.sage {background-color: #617263;}
+.lt-sage {background-color: #939994;}
+.yellow {background-color: #cccc66;}
+.magenta {background-color: #b069ad;}
+.mint {background-color: #c6d9c8;}
+.grey {background-color: grey;}
+
+/* grid block sizing */
+
+.grid-1 {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(11, 4fr);
+}
+.grid-1 p {
+    font-size: 1.8rem;
+    color: #fffbf8;
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+.lt-blue p {
+    align-items: start;
+}
+.orange p {
+    justify-content: end;
+    padding-bottom: 0.1rem;
+}
+
+.grid-1 > *,
+.grid-2 > *,
+.grid-3 > *,
+.booking-grid > * {
+    border: 1.15px solid white;
+}
+
+.grid-1 .peach {
+    grid-row: 1 / 2;
+    grid-column: 2 / 5;
+}
+
+.grid-1 .md-blue {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.grid-1 .dk-brown {
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+}
+
+.grid-1 .orange {
+    grid-row: 2 / 3;
+    grid-column: 5 / 8;
+}
+
+.grid-1 img:nth-of-type(1) {
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+}
+
+.grid-1 img:nth-of-type(2) {
+    grid-row: 3 / 4;
+    grid-column: span 3;
+}
+
+.grid-1 img:nth-of-type(3) {
+    grid-row: 3 / 4;
+    grid-column: span 3;
+}
+
+.grid-1 .lt-blue {
+    grid-row: 3 / 4;
+    grid-column: span 2;
+}
+
+.grid-1 img:nth-of-type(4) {
+    grid-row: 4 / 5;
+    grid-column: 2 / 5;
+}
+
+.grid-1 .sage {
+    grid-row: 4 / 5;
+    grid-column: span 3;
+}
+
+.grid-1 img:nth-of-type(5) {
+    grid-row: 4 / 5;
+    grid-column: span 3;
+}
+
+.grid-1 .yellow {
+    grid-row: 4 / 5;
+    grid-column: span 2;
+}
+
+.grid-1 img:nth-of-type(6) {
+    grid-row: 5 / 6;
+    grid-column: 5 / 8;
+}
+
+.grid-1 .magenta {
+    grid-row: 5 / 6;
+    grid-column: 8 / 11;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(11, 1fr);
+}
+
+.grid-2 .lt-sage {
+    grid-row: 1 / 2;
+    grid-column: 10 / 12;
+    aspect-ratio: 3 / 2;
+}
+
+.grid-2 .peach {
+    grid-row: 2 / 3;
+    grid-column: 8 / 10;
+}
+
+.grid-2 .lt-blue {
+    grid-row: 3 / 4;
+    grid-column: 10 / 12;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-3 .sage {
+    grid-row: 1 / 2;
+    grid-column: 2 / 5;
+    aspect-ratio: 3 / 2;
+}
+
+.grid-3 .peach {
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+}
+
+.grid-3 .md-blue {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.grid-3 .dk-brown {
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+}
+
+.grid-3 .orange {
+    grid-row: 3 / 4;
+    grid-column: span 3;
+}
+
+.grid-3 .lt-blue {
+    grid-row: 3 / 4;
+    grid-column: 11 / 13;
+}
+
+.grid-3 .magenta {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+.grid-3 img:nth-of-type(1) {
+    grid-row: 4 / 6;
+    grid-column: 2 / 8;
+}
+
+.grid-3 .lt-pink {
+    grid-row: 4 / 5;
+    grid-column: 8 / 11;
+}
+
+.grid-3 .mint {
+    grid-row: 5 / 6;
+    grid-column: 8 / 11;
+}
+
+.grid-3 .yellow {
+    grid-row: 5 / 6;
+    grid-column: 11 / 13;
+}
+
+.grid-3 div:nth-last-child(3) {
+    grid-row: 6 / 7;
+    grid-column: 5 / 8;
+}
+
+.grid-3 img:nth-last-child(2) {
+    grid-row: 6 / 7;
+    grid-column: 11 / 13;
+}
+
+.grid-3 img:last-child {
+    grid-row: 7 / 9;
+    grid-column: 5 / 11;
+}
+
+/* booking specifics */
+
+.booking-grid {
+    display: none;
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.booking-grid .sage {
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+}
+
+.booking-grid .peach {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    aspect-ratio: 3 / 2;
+}
+
+.booking-grid .md-blue {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.booking-grid .dk-brown {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+}
+
+.booking-grid .orange {
+    grid-row: 3 / 4;
+    grid-column: 4 / 6;
+}
+
+.booking-grid .lt-blue {
+    grid-row: 3 / 4;
+    grid-column: 8 / 9;
+}
+
+.booking-grid .lt-pink {
+    grid-row: 4 / 5;
+    grid-column: 6 / 8;
+}
+
+.booking-grid .yellow {
+    grid-row: 5 / 6;
+    grid-column: 8 / 9;
+}
+
+.booking-grid div:nth-child(7) {
+    grid-row: 6 / 7;
+    grid-column: 4 / 6;
+}
+
+.booking-grid .grey {
+    grid-row: 6 / 7;
+    grid-column: 8 / 9;
+}
+
+.booking-grid div:nth-child(11) {
+    grid-row: 7 / 8;
+    grid-column: 1 / 2;
+}
+
+.booking-grid div:nth-child(12) {
+    grid-row: 8 / 9;
+    grid-column: 2 / 4;
+}
+
+.booking-grid div:nth-child(13) {
+    grid-row: 8 / 9;
+    grid-column: 4 / 6;
+}
+
+.booking-grid div:nth-child(14) {
+    grid-row: 9 / 10;
+    grid-column: 6 / 8;
+}
+
+.booking-grid div:nth-child(15) {
+    grid-row: 12 / 13;
+    grid-column: 1 / 2;
+}
+
+.booking-grid div:nth-child(16) {
+    grid-row: 12 / 13;
+    grid-column: 2 / 4;
+}
+
+.booking-grid div:nth-child(17) {
+    grid-row: 12 / 13;
+    grid-column: 6 / 8;
+}
+
+.booking-grid div:nth-child(18) {
+    grid-row: 13 / 14;
+    grid-column: 1 / 2;
+}
+
+@media screen and (min-width: 800px) {
+    .booking-grid {
+        display: grid;
+    }
+}
