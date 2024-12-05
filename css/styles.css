@@ -81,6 +81,26 @@ nav a:hover {
     position: absolute;
 }
 
+.round-button {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: block;
+    width: 9rem;
+    height: 9rem;
+    padding: 0.4rem;
+    z-index: 50;
+}
+.round-button span {
+    border: 1px solid white;
+    display: block;
+    border-radius: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ******************* header ********************************* */
 header {
     background-color: white;
@@ -147,7 +167,7 @@ nav ul li a {
 .banner p {
     position: absolute;
     top: 7%;
-    background-color: hwb(40 47% 32% / 0.7);
+    background-color: hwb(40 47% 32% / 0.93);
     color: #fbf9fb;
     line-height: 1.15;
     padding: 1rem;
@@ -172,27 +192,36 @@ nav ul li a {
 /* main layout */
 
 .proposal > div {
-    bottom: 30%;
-    color: #fbf9fb;
-    background-color: hwb(41 47% 32% / 0.902);
+    color: #030303;
+    /* background-color: hwb(41 47% 32% / 0.902); */
     line-height: 1.25;
-    padding: 1rem;
+    padding: 3.75rem 7rem;
     margin: 1rem;
 }
 
 .proposal h3 {
     font-style: italic;
+    margin-bottom: 1rem;
+}
+.proposal img {
+    padding-right: 9rem;
 }
 
+.proposal .round-button {
+    position: absolute;
+    right: 0;
+}
 .expenses {
     text-align: center;
-    padding: 3rem;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.expenses div {
+    margin-bottom: 1rem;
 }
 
-/* .details {
-    padding: 1rem;
-    margin-bottom: 2rem;
-} */
 .details span {
     font-size: 1.75rem;
     padding-right: 0.5rem;
@@ -212,23 +241,32 @@ nav ul li a {
 }
 
 .details .overlap {
-    background-color: peachpuff;
-    /* margin-left: 3rem;
-    margin-bottom: 3rem; */
+    background-color: #d1a78f;
+    margin-left: 2rem;
+    margin-bottom: 6rem;
+    margin-right: 4rem;
 }
 .details .overlap img {
-    /* transform: translate(3rem, 2rem); */
-    /* outline: 1px solid black;
+    transform: translate(3rem, 2rem);
+    outline: 1px solid black;
     outline-offset: -0.75rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 1rem; */
+    padding-left: 1rem;
 }
 .details h3 {
     margin-top: -5rem;
     margin-left: 2.5rem;
     display: flex;
     align-items: top;
+}
+.details .copy {
+    padding-right: 1rem;
+}
+.details .round-button {
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
 }
 
 .stories, 
@@ -256,7 +294,7 @@ nav ul li a {
     margin-bottom: 2rem;
 }
 .questions > div {
-    background-color: #b069ad;
+    background-color: #ae677dc5;
 }
 .questions > div > div {
     padding-left: 2rem;
