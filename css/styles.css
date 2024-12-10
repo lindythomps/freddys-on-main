@@ -272,11 +272,9 @@ nav ul li a {
     margin-bottom: 2rem;
 }
 
-.stories, 
-.spill,
-.features {
-    padding: 1rem;
-}
+.stories {
+    padding: 2rem;
+} 
 
 .stories > div {
     border: 1px solid black;
@@ -300,14 +298,52 @@ nav ul li a {
 }
 
 .stories {
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
 }
 
+.spill {
+    /* background-image: url("../img/paper-background-sm.webp"); */
+    margin-bottom: 4rem;
+}
+.spill h3 {
+    transform: rotate(2deg);
+    text-align: center;
+}
+
+.spill p {
+    /* background-color: rgba(108, 74, 34, 0.7); */
+    border-radius: 3rem;
+    padding: 3rem 6rem;
+    margin-top: -2rem;
+}
+.photo-arrange {
+    flex-direction: row; 
+}
+.spill img {
+    width: 55%;
+    transform: rotate(-2deg);
+}
+.spill a {
+    text-align: center;
+    margin-left: -2rem;
+    margin-bottom: 4rem;
+}
+.brown-bg {
+    background-color: #7d46226a;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
 .questions > div {
     background-color: #ae677df9;
     flex-direction: row;
     gap: 1rem;
     padding: 1rem;
+}
+.questions img {
+    background-color: var(--charcoal);
+    margin-bottom: -0.6rem;
 }
 .questions > div > div {
     width: 75%;
@@ -315,22 +351,6 @@ nav ul li a {
 .questions p {
     font-size: 1.35rem;
 }
-.spill h3 {
-    transform: rotate(2deg);
-    text-align: center;
-}
-
-.spill div {
-    padding: 1rem;
-}
-
-.spill p {
-    /* background-color: rgba(108, 74, 34, 0.7); */
-    border-radius: 3rem;
-    padding: 3rem 1rem;
-    margin-top: -2rem;
-}
-
 .rocky-mountain-stamp {
     float: left;
     width: 12rem;
@@ -340,13 +360,28 @@ nav ul li a {
 }
 
 .features {
-    margin-bottom: 3rem;
+    padding: 2rem;
 }
-
+footer {
+    background-color: var(--charcoal);
+    padding: 1rem;
+}
+footer nav {
+    width: 100%;
+}
 footer ul {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    /* gap: 2rem; */
+}
+footer a,
+footer nav ul li a {
+    color: white;
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+footer a:hover {
+    color: #ae677df9;
 }
 
 footer div {
@@ -354,7 +389,7 @@ footer div {
     width: 100%;
     justify-content: left;
     gap: 2rem;
-    padding-left: 2rem;
+    margin-top: 1rem;
 }
 @media screen and (min-width: 800px) {
     .toggle-btn {
