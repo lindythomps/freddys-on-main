@@ -20,6 +20,7 @@
     --rubik: 1.6rem/1.5 "Rubik", sans-serif;
     --borders: 1px solid black;
     --pink: #ae677df9;
+    --brown: #7d46226a;
 } 
 
 /* typography */
@@ -281,7 +282,7 @@ nav ul li a {
 }
 
 .stories h3 {
-    padding: 1rem;
+    /* padding: 1rem; */
     padding-bottom: 0;
 }
 .stories > div > div {
@@ -293,17 +294,17 @@ nav ul li a {
 
 .stories a {
     position: absolute;
-    right: 5%;
-    bottom: -6rem;
+    right: 1rem;
+    bottom: -32%;
 }
 
 .stories {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 .spill {
     /* background-image: url("../img/paper-background-sm.webp"); */
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 .spill h3 {
     transform: rotate(2deg);
@@ -312,31 +313,32 @@ nav ul li a {
 
 .spill p {
     /* background-color: rgba(108, 74, 34, 0.7); */
-    border-radius: 3rem;
+    /* border-radius: 3rem; */
     padding: 3rem 6rem;
     margin-top: -2rem;
 }
-.photo-arrange {
-    flex-direction: row; 
-}
+
 .spill img {
-    width: 55%;
+    width: 50%;
     transform: rotate(-2deg);
     border: var(--borders);
     padding: 0.25rem;
 }
 .spill a {
     text-align: center;
-    margin-left: -2rem;
-    margin-bottom: 4rem;
+    position: absolute;
+    right: 12%;
+    bottom: -65%;
+
 }
-.brown-bg {
+.photo-arrange .brown-bg {
     background-color: #7d46226a;
     height: 70%;
     width: 100%;
     position: absolute;
     z-index: -1;
 }
+
 .questions > div {
     background-color: #ae677df9;
     flex-direction: row;
@@ -346,11 +348,12 @@ nav ul li a {
 .questions img {
     background-color: var(--pink);
     margin-bottom: -0.6rem;
-    border: var(--borders);
+    /* border: var(--borders); */
 }
 .questions > div > div {
     width: 75%;
 }
+
 .rocky-mountain-stamp {
     float: left;
     width: 12rem;
@@ -411,6 +414,9 @@ footer div {
     .logo {
         padding: 2rem 2rem 1rem 2rem;
     }
+    .spill a {
+        bottom: -70%;
+    }
 }
 @media screen and (min-width: 500px) {
     .site-id {
@@ -437,15 +443,66 @@ footer div {
     .stories .copy {
         margin-bottom: 3rem;
     }
+    .stories a {
+        bottom: -10rem;
+    }
     .round-button {
         width: 10rem;
         height: 10rem;
         font-size: 1.36rem;
     }
-
+    .spill a {
+        bottom: -90%;
+        right: 15%;
+    }
 }
 @media screen and (min-width: 680px) {
-
+    .proposal > div {
+        position: absolute;
+        top: 30%;
+        padding: 0;
+        width: 100%
+    }
+    .proposal > div > div {
+        width: 69%;
+        margin: 0 auto;
+    }
+    .proposal img {
+        margin-top: 3rem;
+        padding: 0;
+    }
+    .details {
+        padding: 0 4rem;
+        margin-bottom: 0;
+    }
+    .stories {
+        margin-bottom: 4rem;
+    }
+    .stories > div {
+        flex-direction: row;
+        gap: 2rem;
+        border: none;
+    }
+    .stories .copy {
+        width: 80%;
+        padding: 0;
+        margin-top: -5rem;
+    }
+    .stories img {
+        border: var(--borders);
+    }
+    .stories a {
+        left: 0;
+    }
+    .spill p {
+        padding: 2rem 4rem 3rem 4rem;
+        width: 70%;
+        margin: -2rem auto 0 auto;
+    }
+    .spill a {
+        bottom: -100%;
+        right: 17%;
+    }
 }
 @media screen and (min-width: 800px) {
     .toggle-btn {
@@ -482,6 +539,9 @@ footer div {
     .logo span {
         font-size: 2rem;
     }
+    .proposal img {
+        margin-top: 0;
+    }
     .banner {
         padding: 0.75rem 5rem 5rem 5rem;
     }
@@ -499,27 +559,80 @@ footer div {
         font-size: 4.5rem;
     }
     main p {
-        font-size: 1.75rem;
-    }
-    .proposal div {
-        top: 25%;
-        bottom: initial;
-        background-color: initial;
-        color: var(--charcoal);
-        width: 87%;
-        padding-left: 9%;
-    }
-    .details > div {
-        /* display: flex; */
+        font-size: 1.5rem;
     }
     .details h3 {
         left: 76%;
     }
-    .details .overlap {
-        width: 75%;
+    .spill .brown-bg {
+        display: none;
     }
+    .spill > div {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        padding: 0 2rem;
+    }
+    .brown-bg-lg {
+        background-color: var(--brown);
+        position: absolute;
+        height: 80%;
+        width: 100%;
+    }
+    .spill .copy {
+        width: 30%;
+    }
+    .spill p {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .spill h3 {
+        /* transform: rotate(0deg); */
+        text-align: left;
+        padding-left: 3rem;
+    }
+    .spill a {
+        bottom: -25%;
+        right: 40%;
+    }
+    .spill img {
+        transform: rotate(0deg);
+        width: 100%;
+    }
+    .spill .photo-arrange {
+        width: 60%;
+        padding: 1rem;
+    }
+    .proposal {
+        order: 1;
+    }
+    .expenses {
+        order: 2;
+    }
+    .details {
+        order: 3;
+    }
+    .stories {
+        order: 4;
+    }
+    .questions {
+        order: 5;
+    }
+    .spill {
+        order: 6;
+    }
+    .features {
+        order: 7;
+    }
+    .questions img {
+        border: none;
+    }
+    .questions {
+        margin-bottom: 3.75rem;
+    }
+   
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 920px) {
     header nav {
         padding: 1.5rem 4% 1.5rem 4%;
     }
@@ -559,11 +672,22 @@ footer div {
         padding: 0 7rem 7rem 7rem;
     }
     .banner p {
-        top: 15%;
+        top: 18%;
         padding: 3rem 1rem 1.5rem 1rem;
     }
     .banner a {
         padding: 2rem;
+    }
+    .details .overlap {
+        width: 85%;
+    }
+    .spill a {
+        bottom: -35%;
+        right: 64%;
+    }
+    .features, 
+    footer .wrapper {
+        width: 80%;
     }
 }
 /* @media screen and (min-width: 1250px) {
