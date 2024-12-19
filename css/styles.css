@@ -318,7 +318,7 @@ nav ul li a {
     margin-top: -2rem;
 }
 
-.spill img {
+.spill picture {
     width: 50%;
     transform: rotate(-2deg);
     border: var(--borders);
@@ -595,7 +595,7 @@ footer div {
         bottom: -25%;
         right: 40%;
     }
-    .spill img {
+    .spill picture {
         transform: rotate(0deg);
         width: 100%;
     }
@@ -623,9 +623,6 @@ footer div {
     }
     .features {
         order: 7;
-    }
-    .questions img {
-        border: none;
     }
     .questions {
         margin-bottom: 3.75rem;
