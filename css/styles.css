@@ -264,7 +264,7 @@ nav ul li a {
     margin-top: -5rem;
     padding-left: 2.5rem;
     display: flex;
-    align-items: top;
+    align-items: flex-start;
     text-align: left;
     width: 100%;
 }
