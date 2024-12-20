@@ -175,7 +175,8 @@ nav ul li a {
     padding: 1rem;
     margin-right: 1rem;
 }
-.banner a {
+.banner a,
+.picture a {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -193,7 +194,7 @@ nav ul li a {
 
 /* main layout */
 
-.proposal > div {
+.proposal > div:first-child {
     color: #030303;
     /* background-color: hwb(41 47% 32% / 0.902); */
     line-height: 1.25;
@@ -205,9 +206,8 @@ nav ul li a {
     font-style: italic;
     margin-bottom: 1rem;
 }
-.proposal img {
-    /* padding-right: 9rem; */
-    padding-right: 6rem;
+.proposal .picture {
+    margin-right: 6rem;
 }
 
 .proposal .round-button {
@@ -372,13 +372,18 @@ footer {
 }
 footer nav {
     width: 100%;
+    margin-bottom: 2rem;
 }
 footer ul {
     display: flex;
     justify-content: space-between;
     /* gap: 2rem; */
 }
-footer a,
+footer p a {
+    color: black;
+    text-decoration: underline;
+}
+footer ul a,
 footer nav ul li a {
     color: black;
     font-size: 1.25rem;
@@ -387,7 +392,9 @@ footer nav ul li a {
 footer a:hover {
     color: #ae677df9;
 }
-
+footer p {
+    text-align: center;
+}
 footer div {
     display: flex;
     width: 100%;
@@ -429,6 +436,8 @@ footer div {
     }
     .expenses {
         padding: 5rem 6rem;
+        max-width: 1150px;
+        margin: 0 auto;
     }
     .details > div {
         padding: 2rem;
@@ -587,7 +596,6 @@ footer div {
         width: 100%;
     }
     .spill h3 {
-        /* transform: rotate(0deg); */
         text-align: left;
         padding-left: 3rem;
     }
@@ -684,7 +692,8 @@ footer div {
     }
     .features, 
     footer .wrapper {
-        width: 80%;
+       max-width: 900px;
+       margin: 0 auto;
     }
 }
 /* @media screen and (min-width: 1250px) {
