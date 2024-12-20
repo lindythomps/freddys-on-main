@@ -21,6 +21,7 @@
     --borders: 1px solid black;
     --pink: #ae677df9;
     --brown: #7d46226a;
+    --purple: #bd8dbf;
 } 
 
 /* typography */
@@ -136,6 +137,7 @@ header {
     padding: 1rem;
     width: 5rem;
     display: block;
+    fill: #bd8dbf;
 }
 
 header nav {
@@ -346,12 +348,16 @@ nav ul li a {
     padding: 1rem;
 }
 .questions img {
-    background-color: var(--pink);
+    /* background-color: var(--pink); */
     margin-bottom: -0.6rem;
     /* border: var(--borders); */
 }
 .questions > div > div {
     width: 75%;
+}
+.questions p a {
+    text-decoration: underline;
+    color: black;
 }
 
 .rocky-mountain-stamp {
@@ -366,42 +372,21 @@ nav ul li a {
     padding: 2rem;
     margin-bottom: 2rem;
 }
-footer {
-    background-color: #ae677df9;
-    padding: 1rem;
-}
-footer nav {
-    width: 100%;
-    margin-bottom: 2rem;
-}
-footer ul {
-    display: flex;
-    justify-content: space-between;
-    /* gap: 2rem; */
-}
-footer p a {
-    color: black;
+.features a {
+    color: #bd8dbf;
     text-decoration: underline;
 }
-footer ul a,
-footer nav ul li a {
-    color: black;
-    font-size: 1.25rem;
+footer {
     padding: 1rem;
 }
-footer a:hover {
-    color: #ae677df9;
+footer a {
+    text-decoration: underline;
+    line-height: 1;
+    font-style: normal;
+    font-size: 1.25rem;
 }
-footer p {
-    text-align: center;
-}
-footer div {
-    display: flex;
-    width: 100%;
-    justify-content: left;
-    gap: 2rem;
-    margin-top: 1rem;
-}
+
+
 @media screen and (min-width: 400px) {
     header nav {
         top: 7.45rem;
