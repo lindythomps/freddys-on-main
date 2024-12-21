@@ -208,8 +208,8 @@ nav ul li a {
     font-style: italic;
     margin-bottom: 1rem;
 }
-.proposal .picture {
-    margin-right: 6rem;
+.proposal img {
+    padding-right: 6rem;
 }
 
 .proposal .round-button {
