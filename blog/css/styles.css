@@ -1,0 +1,125 @@
+/* Colour Palette
+
+    background-color: #b84030;
+    background-color: #3d1f10;
+    background-color: #516241;
+    background-color: #b9a072;
+    background-color: #b04507;
+    background-color: #750119;
+
+*/
+
+/* Typography */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    padding-bottom: 1rem;
+}
+
+.card-deck {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 1rem;
+}
+
+.card {
+    display: flex;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.card > * {
+    min-width: 50%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card:nth-of-type(1) {
+    background-color: #516241;
+}
+
+.card:nth-of-type(2) {
+    background-color: #3d1f10;
+}
+
+.card:nth-of-type(3) {
+   background-color: #b84030;
+}
+
+.card:nth-of-type(4) {
+    background-color: #b9a072;
+}
+
+.card:nth-of-type(5) {
+    background-color: #b04507;
+}
+
+.card:nth-of-type(6) {
+    background-color: #b9a072;
+}
+
+.description a {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0.25rem;
+    color: #FFF;
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.description a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+/* Media Queries */
+@media screen and (min-width: 800px) {
+    .card {
+        flex-flow: column;
+    }
+
+    .card-deck {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    .card {
+        width: calc(100% / 2 - 0.5rem);
+    }
+
+    .card > * {
+        width: unset;
+    }
+ } 
+
+ @media screen and (min-width: 1024px) {
+    .card {
+        width: calc(100% / 3 - 0.5rem);
+    }
+ }
+
