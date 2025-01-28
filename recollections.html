@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Cosy Up For Fall</title>
+		<title>Freddy's on Main | Recollections</title>
 
 		<meta name="author" content="Valerie Watson | vwatson@nait.ca">
 		<meta name="description" content="This website demonstrates how to present different flexbox layouts and orientations based upon viewport size.">
@@ -15,25 +15,59 @@
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="blog/css/styles.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
+		<header>
+			<div class="wrapper">
+				<div class="relative flex-container">
+					<nav>
+						<ul>
+							<li><a href="#booking">Booking</a></li>
+							<li><a href="#pricing">Pricing</a></li>
+							<li><a href="#faqs">FAQs</a></li>
+						</ul>
+						<ul>
+							<li><a href="#gallery">Recollections</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#about">About</a></li>
+						</ul>
+					</nav>
+					<section class="site-id">
+						<h1 class="sr-only">Freddy's on Main</h1>
+						<div class="horizontal-line"></div>
+						<a class="logo flex-container" href="index.html">
+							<img src="img/freddys-logo.png" alt="Freddy's on Main Logo">
+							<img src="img/logo-tan.png" alt="Freddy's on Main logo">
+							<span>on main</span>
+						</a>
+						<div class="horizontal-line"></div>
+						<svg class="toggle-btn" viewBox="0 0 100 80" width="100%" height="100%">
+							<rect width="100" height="16" rx="5"></rect>
+							<rect y="30" width="100" height="16" rx="5"></rect>
+							<rect y="60" width="100" height="16" rx="5"></rect>
+						</svg>
+					</section>
+				</div>
+			</div>
+		</header>
 		<section class="card-deck">
-			<h2>Cosy Up For Fall</h2>
+			<h2>Recollections</h2>
 			<div class="card">
 				<div class="image-container">
-					<img src="img/1.webp" alt="some desctiptive text">
+					<img src="blog/img/sam-lindy-blog.webp" alt="some desctiptive text">
 				</div>
 				<section class="description">
-					<h3>Fall Decor Ideas</h3>
-					<p>With summer coming to an end, it’s time to transition your home decor, both inside and outside.</p>
-					<a href="#">Read More</a>
+					<h3>Lindy & Sam's Hygge Inspired Wedding</h3>
+					<p>For this November wedding, think copper accents, table runners, candles, unique glasswear, hot chocolate, and wood cookies; creating a cosy and warm atmosphere for dinner, reception, and a program of singing, music, and dancing.</p>
+					<a href="blog/lindy+sam.html">Read More</a>
 				</section>
 			</div>
 	
 			<div class="card">
 				<div class="image-container">
-					<img src="img/2.webp" alt="some desctiptive text">
+					<img src="blog/img/2.webp" alt="some desctiptive text">
 				</div>
 				<section class="description">
 					<h3>Embrace Warmth</h3>
@@ -44,7 +78,7 @@
 			</div>
 			<div class="card">
 				<div class="image-container">
-					<img src="img/3.webp" alt="some desctiptive text">
+					<img src="blog/img/3.webp" alt="some desctiptive text">
 				</div>
 				<section class="description">
 					<h3>Better Together</h3>
@@ -54,7 +88,7 @@
 			</div>
 			<div class="card">
 				<div class="image-container">
-					<img src="img/4.webp" alt="some desctiptive text">
+					<img src="blog/img/4.webp" alt="some desctiptive text">
 				</div>
 				<section class="description">
 					<h3>Better Together</h3>
@@ -64,7 +98,7 @@
 			</div>	
 				<div class="card">
 					<div class="image-container">
-						<img src="img/5.webp" alt="some desctiptive text">
+						<img src="blog/img/5.webp" alt="some desctiptive text">
 					</div>
 					<section class="description">
 						<h3>Dried Wreath</h3>
@@ -74,7 +108,7 @@
 				</div>
 				<div class="card">
 					<div class="image-container">
-						<img src="img/6.webp" alt="some desctiptive text">
+						<img src="blog/img/6.webp" alt="some desctiptive text">
 					</div>
 					<section class="description">
 						<h3>Leaf Wreath</h3>
@@ -83,6 +117,6 @@
 					</section>
 				</div>
 			</section>
-		
+		<script src="js/main.js"></script>
 	</body>
 </html>

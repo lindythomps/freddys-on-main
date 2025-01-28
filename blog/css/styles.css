@@ -8,6 +8,74 @@
     background-color: #750119;
 
 */
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+/* ******************* Header ********************* */
+header {
+    background-color: white;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.site-id {
+    margin: 0 auto;
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {  
+    text-align: center;
+    color: var(--charcoal);
+    text-decoration: none;
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+.logo span {
+    font-family: 'rahayuregular';
+    font-size: 1.5rem;
+}
+
+.logo img:last-of-type {
+    display: none;
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    width: 5rem;
+    display: block;
+    fill: #bd8dbf;
+}
+
+header nav {
+    position: absolute;
+    top: 5.5rem; /* the height of the closed header */
+    left: 0;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+    background-color: white;
+    }
+
+.show-nav {
+    max-height: 100vh;
+    z-index: 50;
+    }
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: black;
+    z-index: 100;
+}
 
 /* Typography */
 
@@ -22,7 +90,7 @@ p {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 h3 {
@@ -39,6 +107,7 @@ h3 {
     display: flex;
     margin-top: 1rem;
     color: #fff;
+    flex-flow: column;
 }
 
 .card > * {
@@ -67,14 +136,17 @@ h3 {
 
 .card:nth-of-type(4) {
     background-color: #b9a072;
+    display: none;
 }
 
 .card:nth-of-type(5) {
     background-color: #b04507;
+    display: none;
 }
 
 .card:nth-of-type(6) {
     background-color: #b9a072;
+    display: none;
 }
 
 .description a {
@@ -102,6 +174,7 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-top: 15rem;
     }
 
     h2 {
