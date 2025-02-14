@@ -428,315 +428,6 @@ footer > ul:last-child {
     padding: 1rem;
 }
 
-@media screen and (min-width: 400px) {
-    header nav {
-        top: 7.45rem;
-    }
-    .banner p {
-        font-size: 1.5rem;
-    }
-    .site-id {
-        width: 45%;
-    }
-    .logo span {
-        font-size: 2.15rem;
-    }
-    .toggle-btn {
-        width: 6rem;
-    }
-    .logo {
-        padding: 2rem 2rem 1rem 2rem;
-    }
-    .spill a {
-        bottom: -70%;
-    }
-}
-@media screen and (min-width: 500px) {
-    .site-id {
-        width: 220px;
-    }
-    section p,
-    footer a,
-    footer nav ul li a {
-        font-size: 1.35rem;
-    }
-    .expenses {
-        padding: 5rem 6rem;
-        max-width: 1150px;
-        margin: 0 auto;
-    }
-    .details > div {
-        padding: 2rem;
-    }
-    .stories,
-    .features {
-        padding: 2.5rem 4rem;
-    }
-    .stories img {
-        padding: 0.4rem;
-    }
-    .stories .copy {
-        margin-bottom: 3rem;
-    }
-    .stories a {
-        bottom: -10rem;
-    }
-    .round-button {
-        width: 10rem;
-        height: 10rem;
-        font-size: 1.36rem;
-    }
-    .spill a {
-        bottom: -90%;
-        right: 15%;
-    }
-    footer p {
-        text-align: center;
-    }
-    footer > ul:last-child {
-        justify-content: center;
-    }
-}
-@media screen and (min-width: 680px) {
-    .proposal img {
-        margin-top: 3rem;
-        padding: 0;
-    }
-    .proposal > div {
-        position: absolute;
-        top: 22%;
-        padding: 0;
-        width: 100%
-    }
-    .proposal > div > div {
-        width: 69%;
-        margin: 0 auto;
-    }
-    .details {
-        padding: 0 4rem;
-        margin-bottom: 0;
-    }
-    .stories {
-        margin-bottom: 4rem;
-    }
-    .stories > div {
-        flex-direction: row;
-        gap: 2rem;
-        border: none;
-    }
-    .stories .copy {
-        width: 80%;
-        padding: 0;
-        margin-top: -5rem;
-    }
-    .stories img {
-        border: var(--borders);
-    }
-    .stories a {
-        left: 0;
-    }
-    .spill p {
-        padding: 2rem 4rem 3rem 4rem;
-        width: 70%;
-        margin: -2rem auto 0 auto;
-    }
-    .spill a {
-        bottom: -100%;
-        right: 17%;
-    }
-}
-@media screen and (min-width: 800px) {
-    .toggle-btn {
-        display: none;
-        position: static;
-    } 
-
-    header nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: static;
-        overflow: visible;
-        max-height: unset;
-        padding: 1.5rem;
-        width: 100%;
-        }
-        
-    header nav ul {
-        display: flex;
-        flex-direction: row;
-        width: 30%;
-        justify-content: space-between;
-    }
-    header nav ul a {
-        padding: 2.5rem 1rem 0 1rem;
-        line-height: 2;
-        text-align: center;
-    }
-    .site-id {
-        position: absolute;
-        width: 20%;
-    }
-    .logo span {
-        font-size: 2rem;
-    }
-    .proposal img {
-        margin-top: 0;
-    }
-    .banner {
-        padding: 0.75rem 5rem 5rem 5rem;
-    }
-    .banner p {
-        font-size: 1.75rem;
-        margin-right: 5%;
-        padding: 3rem 2rem;
-        line-height: 1.5;
-    }
-    .banner a {
-        bottom: 7rem;
-        right: 7rem;
-    }
-    .proposal h3 {
-        font-size: 4.5rem;
-    }
-    .proposal div {
-        top: 23%;
-    }
-    main p {
-        font-size: 1.5rem;
-    }
-    .details h3 {
-        left: 76%;
-    }
-    .spill .brown-bg {
-        display: none;
-    }
-    .spill > div {
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        padding: 0 2rem;
-    }
-    .brown-bg-lg {
-        background-color: var(--brown);
-        position: absolute;
-        height: 80%;
-        width: 100%;
-    }
-    .spill .copy {
-        width: 30%;
-    }
-    .spill p {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-    .spill h3 {
-        text-align: left;
-        padding-left: 0rem;
-        transform: rotate(0);
-    }
-    .spill a {
-        /* bottom: -25%;
-        right: 40%; */
-        position: initial;
-        margin-top: 1.75rem;
-    }
-    .spill picture {
-        transform: rotate(0deg);
-        width: 100%;
-    }
-    .spill .photo-arrange {
-        width: 60%;
-        padding: 1rem;
-    }
-    .proposal {
-        order: 1;
-    }
-    .expenses {
-        order: 2;
-    }
-    .details {
-        order: 3;
-    }
-    .stories {
-        order: 4;
-    }
-    .questions {
-        order: 5;
-    }
-    .spill {
-        order: 6;
-    }
-    .features {
-        order: 7;
-    }
-    .questions {
-        margin-bottom: 3.75rem;
-    }
-   
-}
-@media screen and (min-width: 920px) {
-    header nav {
-        padding: 1.5rem 4% 1.5rem 4%;
-    }
-    header nav a {
-        font-size: 1.75rem;
-    }
-    .site-id {
-        bottom: 0;
-        z-index: 50;
-        transform: translate(0, 100%);
-        width: 90%;
-        padding: 1rem;
-        padding-top: 3rem;
-    }
-    .horizontal-line {
-        height: 2px;
-        background-color: #d3b05fb3;
-        border-radius: 15%;
-        width: 45%;
-        z-index: 100;
-    }
-
-    .logo span {
-        color: #f6e3d7;
-        font-size: 3rem;
-    }
-
-    .logo img:last-of-type {
-        display: block;
-        /* padding-top: 1rem; */
-    }
-
-    .logo img:first-of-type {
-        display: none;
-    }
-    .banner {
-        padding: 0 7rem 7rem 7rem;
-    }
-    .banner p {
-        top: 18%;
-        padding: 3rem 1rem 1.5rem 1rem;
-    }
-    .banner a {
-        padding: 2rem;
-    }
-    .proposal div {
-        top: 28%;
-    }
-    .details .overlap {
-        width: 85%;
-    }
-    .spill a {
-        bottom: -35%;
-        right: 64%;
-    }
-    .features, 
-    footer .wrapper {
-       max-width: 900px;
-       margin: 0 auto;
-    }
-}
 /* @media screen and (min-width: 1250px) {
     header .wrapper {  
         max-width: 1250px;
@@ -947,6 +638,11 @@ footer > ul:last-child {
     border-left: 0;
 }
 
+/* ******************** Freddy's Family Layout ************************* */
+.freddys-family section {
+    padding: 2rem;
+}
+
 @media screen and (min-width: 390px) {
     .music {
         bottom: 77%;
@@ -960,6 +656,31 @@ footer > ul:last-child {
         bottom: 27%;
     }
 }
+
+@media screen and (min-width: 400px) {
+    header nav {
+        top: 7.45rem;
+    }
+    .banner p {
+        font-size: 1.5rem;
+    }
+    .site-id {
+        width: 45%;
+    }
+    .logo span {
+        font-size: 2.15rem;
+    }
+    .toggle-btn {
+        width: 6rem;
+    }
+    .logo {
+        padding: 2rem 2rem 1rem 2rem;
+    }
+    .spill a {
+        bottom: -70%;
+    }
+}
+
 @media screen and (min-width: 440px) {
     .floor-plan {
         padding: 1rem 4rem 1rem 3rem;
@@ -994,6 +715,53 @@ footer > ul:last-child {
 
     .vendors {
         padding-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .site-id {
+        width: 220px;
+    }
+    section p,
+    footer a,
+    footer nav ul li a {
+        font-size: 1.35rem;
+    }
+    .expenses {
+        padding: 5rem 6rem;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    .details > div {
+        padding: 2rem;
+    }
+    .stories,
+    .features {
+        padding: 2.5rem 4rem;
+    }
+    .stories img {
+        padding: 0.4rem;
+    }
+    .stories .copy {
+        margin-bottom: 3rem;
+    }
+    .stories a {
+        bottom: -10rem;
+    }
+    .round-button {
+        width: 10rem;
+        height: 10rem;
+        font-size: 1.36rem;
+    }
+    .spill a {
+        bottom: -90%;
+        right: 15%;
+    }
+    footer p {
+        text-align: center;
+    }
+    footer > ul:last-child {
+        justify-content: center;
     }
 }
 
@@ -1053,6 +821,52 @@ footer > ul:last-child {
 }
 
 @media screen and (min-width: 680px) {
+    .proposal img {
+        margin-top: 3rem;
+        padding: 0;
+    }
+    .proposal > div {
+        position: absolute;
+        top: 22%;
+        padding: 0;
+        width: 100%
+    }
+    .proposal > div > div {
+        width: 69%;
+        margin: 0 auto;
+    }
+    .details {
+        padding: 0 4rem;
+        margin-bottom: 0;
+    }
+    .stories {
+        margin-bottom: 4rem;
+    }
+    .stories > div {
+        flex-direction: row;
+        gap: 2rem;
+        border: none;
+    }
+    .stories .copy {
+        width: 80%;
+        padding: 0;
+        margin-top: -5rem;
+    }
+    .stories img {
+        border: var(--borders);
+    }
+    .stories a {
+        left: 0;
+    }
+    .spill p {
+        padding: 2rem 4rem 3rem 4rem;
+        width: 70%;
+        margin: -2rem auto 0 auto;
+    }
+    .spill a {
+        bottom: -100%;
+        right: 17%;
+    }
     .faqs {
         left: 10%;
         top: 0;
@@ -1093,7 +907,133 @@ footer > ul:last-child {
 }
 
 @media screen and (min-width: 800px) {
+    .toggle-btn {
+        display: none;
+        position: static;
+    } 
 
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: static;
+        overflow: visible;
+        max-height: unset;
+        padding: 1.5rem;
+        width: 100%;
+        }
+        
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        justify-content: space-between;
+    }
+    header nav ul a {
+        padding: 2.5rem 1rem 0 1rem;
+        line-height: 2;
+        text-align: center;
+    }
+    .site-id {
+        position: absolute;
+        width: 20%;
+    }
+    .logo span {
+        font-size: 2rem;
+    }
+    .proposal img {
+        margin-top: 0;
+    }
+    .banner {
+        padding: 0.75rem 5rem 5rem 5rem;
+    }
+    .banner p {
+        font-size: 1.75rem;
+        margin-right: 5%;
+        padding: 3rem 2rem;
+        line-height: 1.5;
+    }
+    .banner a {
+        bottom: 7rem;
+        right: 7rem;
+    }
+    .proposal h3 {
+        font-size: 4.5rem;
+    }
+    .proposal div {
+        top: 23%;
+    }
+    main p {
+        font-size: 1.5rem;
+    }
+    .details h3 {
+        left: 76%;
+    }
+    .spill .brown-bg {
+        display: none;
+    }
+    .spill > div {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        padding: 0 2rem;
+    }
+    .brown-bg-lg {
+        background-color: var(--brown);
+        position: absolute;
+        height: 80%;
+        width: 100%;
+    }
+    .spill .copy {
+        width: 30%;
+    }
+    .spill p {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .spill h3 {
+        text-align: left;
+        padding-left: 0rem;
+        transform: rotate(0);
+    }
+    .spill a {
+        /* bottom: -25%;
+        right: 40%; */
+        position: initial;
+        margin-top: 1.75rem;
+    }
+    .spill picture {
+        transform: rotate(0deg);
+        width: 100%;
+    }
+    .spill .photo-arrange {
+        width: 60%;
+        padding: 1rem;
+    }
+    .proposal {
+        order: 1;
+    }
+    .expenses {
+        order: 2;
+    }
+    .details {
+        order: 3;
+    }
+    .stories {
+        order: 4;
+    }
+    .questions {
+        order: 5;
+    }
+    .spill {
+        order: 6;
+    }
+    .features {
+        order: 7;
+    }
+    .questions {
+        margin-bottom: 3.75rem;
+    }
     .seating h3 {
         padding-left: 36%;
     }
@@ -1176,6 +1116,69 @@ footer > ul:last-child {
     }
     .booking h3 {
         margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    header nav {
+        padding: 1.5rem 4% 1.5rem 4%;
+    }
+    header nav a {
+        font-size: 1.75rem;
+    }
+    .site-id {
+        bottom: 0;
+        z-index: 50;
+        transform: translate(0, 100%);
+        width: 90%;
+        padding: 1rem;
+        padding-top: 3rem;
+    }
+    .horizontal-line {
+        height: 2px;
+        background-color: #d3b05fb3;
+        border-radius: 15%;
+        width: 45%;
+        z-index: 100;
+    }
+
+    .logo span {
+        color: #f6e3d7;
+        font-size: 3rem;
+    }
+
+    .logo img:last-of-type {
+        display: block;
+        /* padding-top: 1rem; */
+    }
+
+    .logo img:first-of-type {
+        display: none;
+    }
+    .banner {
+        padding: 0 7rem 7rem 7rem;
+    }
+    .banner p {
+        top: 18%;
+        padding: 3rem 1rem 1.5rem 1rem;
+    }
+    .banner a {
+        padding: 2rem;
+    }
+    .proposal div {
+        top: 28%;
+    }
+    .details .overlap {
+        width: 85%;
+    }
+    .spill a {
+        bottom: -35%;
+        right: 64%;
+    }
+    .features, 
+    footer .wrapper {
+       max-width: 900px;
+       margin: 0 auto;
     }
 }
 
