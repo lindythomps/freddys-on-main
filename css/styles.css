@@ -253,6 +253,7 @@ nav ul li a {
     margin-left: 2.5rem;
     margin-bottom: 8rem;
     margin-right: 4rem;
+    /* max-width: 500px; */
 }
 .details .overlap img {
     transform: translate(3rem, 2rem);
@@ -273,10 +274,12 @@ nav ul li a {
 
 .details {
     margin-bottom: 2rem;
+    max-width: 1000px;
 }
 
 .stories {
     padding: 2rem;
+    max-width: 1000px;
 } 
 
 .stories > div {
@@ -325,6 +328,7 @@ nav ul li a {
     transform: rotate(-2deg);
     border: var(--borders);
     padding: 0.25rem;
+    max-width: 500px;
 }
 .spill a {
     text-align: center;
@@ -340,7 +344,6 @@ nav ul li a {
     position: absolute;
     z-index: -1;
 }
-
 .questions > div {
     background-color: #ae677df9;
     flex-direction: row;
@@ -1267,6 +1270,11 @@ footer > ul:last-child {
     .booking {
         max-width: 1440px;
         margin: 0 auto;
+    }
+    .banner p {
+        padding: 6rem 2rem 4rem 2rem;
+        font-size: 2.25rem;
+        top: 12%;
     }
     /* header ul, */
     footer ul,
