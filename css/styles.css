@@ -1187,9 +1187,7 @@ footer > ul:last-child {
     .proposal div {
         top: 28%;
     }
-    .details .overlap {
-        width: 85%;
-    }
+    
     .spill a {
         bottom: -35%;
         right: 64%;
